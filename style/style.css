@@ -1,3 +1,28 @@
+@font-face {
+    font-family: 'cera_proregular';
+    src: url('../style/Fonts/cerapro-regular-webfont.eot');
+    src: url('../style/Fonts/cerapro-regular-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../style/Fonts/cerapro-regular-webfont.woff2') format('woff2'),
+    url('../style/Fonts/cerapro-regular-webfont.woff') format('woff'),
+    url('../style/Fonts/cerapro-regular-webfont.svg#cera_proregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'cera_problack';
+    src: url('../style/Fonts/cerapro-black-webfont.eot');
+    src: url('../style/Fonts/cerapro-black-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../style/Fonts/cerapro-black-webfont.woff2') format('woff2'),
+    url('../style/Fonts/cerapro-black-webfont.woff') format('woff'),
+    url('../style/Fonts/cerapro-black-webfont.ttf') format('truetype'),
+    url('../style/Fonts/cerapro-black-webfont.svg#cera_problack') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
 .background{
     max-width: 500px;
     margin: auto;
@@ -15,7 +40,7 @@
 .title_login{
     border-right:solid 2px #3d3d3d;;
     padding-right: 12px;
-margin-right: 10px;
+    margin-right: 10px;
     font-weight: 500;
     font-size: 20px;
     line-height: 80%;
@@ -164,12 +189,16 @@ margin-right: 10px;
     margin-bottom: 40px;
 }
 
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 
 body{
-    width: 1440px;
-    height: 3659px;
+
     background-color: #fff;
-    margin: 25px 120px 13px 120px;
 
 }
 
@@ -177,9 +206,8 @@ body{
 .container{
     margin: auto;
     max-width: 1211px;
-    width: 1200px;
-    height: 53px;
     border-bottom: 0.30px solid rgba(70, 163, 88, 0.5);
+
 
 
 }
@@ -187,6 +215,9 @@ body{
 header{
     padding-top: 30px;
     margin-bottom: 12px;
+    /*display: flex;*/
+    /*align-items: center;*/
+    /*justify-content: center;*/
 }
 
 header nav ul{
@@ -195,15 +226,19 @@ header nav ul{
     align-items: center;
     justify-content: space-between;
     gap: 50px;
+
 }
 
 .logo{
 margin-right: 229px;
+    margin-bottom: 18px;
 }
 
 header nav  li a{
     text-decoration: none;
-    display: inline-block;
+    /*display: inline-block;*/
+
+
 }
 
 header nav li:first-of-type{
@@ -216,12 +251,12 @@ header nav li{
     font-weight: 400;
     font-size: 16px;
     color: #3d3d3d;
-    /*margin-right: 50px;*/
+    font-family: 'cera_proregular';
 }
 
-/*header nav li:last-of-type{*/
-/*    margin-right: 0;*/
-/*}*/
+header nav li:last-of-type{
+    margin-right: 0;
+}
 
 header .container{
     display: flex;
@@ -250,20 +285,19 @@ header nav li:hover:after{
     border: solid;
     background-color: #46A358;
     border-radius: 6px;
-    width: 100px;
-    height: 35px;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 4px;
     box-sizing: border-box;
-    padding: 7px 17px 7px 17px ;
-margin-left: 370px;
+    padding: 8px 17px 7px 17px ;
+    margin-left: 370px;
+    margin-bottom: 18px;
 }
 
 .link_login:before{
     content: "";
-    /*display: inline-block;*/
+    display: inline-block;
     background-image: url("../images/Logout.svg");
     width: 20px;
     height: 20px;
@@ -273,9 +307,10 @@ margin-left: 370px;
     background: linear-gradient(135deg, #f5f5f5 0%, #f5f5f5 100%);
     min-height: 450px;
     display: flex;
-    justify-content: space-between;
+    /*justify-content: space-between;*/
     align-items: center;
-
+    padding-left: 43px;
+    border: transparent;
 
 }
 .banner article{
@@ -291,9 +326,8 @@ main article h4{
     letter-spacing: 0.1em;
     text-transform: uppercase;
     color: #3d3d3d;
-    margin-left: 43px;
     margin-bottom: 7px;
-    margin-top: 63px;
+    /*margin-top: 63px;*/
 
 }
 
@@ -308,8 +342,8 @@ main article h1{
     line-height: 100%;
     /*text-transform: uppercase;*/
     color: #3d3d3d;
-    margin-left: 40px;
     margin-bottom: 5px;
+    font-family: 'cera_problack';
 
 }
 
@@ -318,33 +352,35 @@ main article h1 span{
 }
 
 main article p{
-    width: 557px;
-    height: 45px;
+    /*width: 557px;*/
+    /*height: 45px;*/
     font-weight: 400;
     font-size: 14px;
     line-height: 171%;
     color: #727272;
-    margin-left: 43px;
     margin-bottom: 44px;
 }
 
 main article a{
-    width: 140px;
-    height: 40px;
+    /*width: 140px;*/
+    /* */
     border-radius: 6px;
     font-weight: 700;
     font-size: 16px;
     line-height: 125%;
-    /*text-transform: uppercase;*/
+    text-transform: uppercase;
     color: #fff;
     border: solid;
     background-color: #46A358;
     text-decoration: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    /*display: flex;*/
+    /*align-items: center;*/
+    /*justify-content: center;*/
     box-sizing: border-box;
-    padding: 10px 0 10px ;
-    margin-left: 43px;
     margin-bottom: 85px;
+    padding: 10px 27px ;
+}
+
+.image_banner{
+    margin-top: 12px;
 }
