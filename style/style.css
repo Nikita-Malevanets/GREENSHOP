@@ -264,6 +264,9 @@ header{
     /*justify-content: center;*/
 }
 
+
+
+
 header nav ul{
     list-style: none;
     display: flex;
@@ -284,12 +287,12 @@ header nav  li a{
     color: #3d3d3d;
 }
 
-header nav li:first-of-type{
-    font-weight: 700;
-    font-size: 16px;
-    color: #3d3d3d;
-    font-family: 'cera_probold';
-}
+/*header nav li:first-of-type{*/
+/*    font-weight: 700;*/
+/*    font-size: 16px;*/
+/*    color: #3d3d3d;*/
+/*    font-family: 'cera_probold';*/
+/*}*/
 
 header nav li{
     font-weight: 400;
@@ -306,7 +309,7 @@ header .container{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 0.30px solid rgba(70, 163, 88, 0.5);
+    border-bottom: 1px solid rgba(70, 163, 88, 0.5);
 }
 
 header nav li:after{
@@ -316,11 +319,119 @@ header nav li:after{
     content:"" ;
     display: block;
     margin-top:22px;
-}
+} 
 
 header nav li:hover:after{
     background-color: #46A358;
 }
+
+header nav li:hover{
+    font-weight: 700;
+    font-size: 16px;
+    color: #3d3d3d;
+    font-family: 'cera_probold';
+}
+
+header nav li ul li:after{
+    display: none;
+}
+
+
+header nav .plant_care{
+    position: relative;
+}
+
+header nav .drop_down{
+    position: absolute;
+    display: block;
+    top: 65px;
+    left: -55px;
+    background-color: #edf6ee;
+    /*padding: 7px 88px 7px 14px;*/
+    opacity: 0;
+}
+
+header nav .plant_care:hover .drop_down{
+    opacity: 1;
+}
+
+header nav .drop_down li {
+    padding: 7px 88px 8px 14px;
+    position: relative;
+}
+
+/*header nav .drop_down li:last-of-type:after{*/
+/*    content: "";*/
+/*    display: inline-block;*/
+/*    background-image: url("../images/Stroke 3.svg");*/
+/*    height: 10px;*/
+/*    width: 6px;*/
+/*    position: absolute;*/
+/*    right: 17px;*/
+/*    bottom: 12px;*/
+/*}*/
+
+header nav .drop_down li:hover path{
+    fill: #fff;
+}
+
+header nav .drop_down li svg{
+    position: absolute;
+    right: 17px;
+    bottom: 12px;
+}
+
+header nav .drop_down li:hover svg{
+    transform: rotate(180deg);
+}
+
+header nav .drop_down li a{
+    font-weight: 400;
+    font-size: 16px;
+    color: #3d3d3d;
+}
+
+header nav .drop_down li:hover{
+    background-color: #1a712a;
+}
+
+header nav .drop_down li:hover a{
+    font-weight: 700;
+    font-size: 16px;
+    color: #fff;
+}
+
+header nav .drop_down .drop_down_2{
+    position: absolute;
+    display: block;
+    top: -105px;
+    left: 183px;
+    background-color: #edf6ee;
+    opacity: 0;
+}
+
+.drop_down .priming:hover .drop_down_2{
+    opacity: 1;
+}
+
+header .drop_down .drop_down_2 li{
+    padding: 7px 14px 8px 14px;
+    white-space: nowrap;
+}
+
+
+.drop_down li:hover .drop_down_2 li a{
+    font-weight: 400;
+    font-size: 16px;
+    color: #3d3d3d;
+}
+
+.drop_down li:hover .drop_down_2 li:hover a{
+    font-weight: 700;
+    font-size: 16px;
+    color: #fff;
+}
+
 
 .link_login{
     text-decoration: none;
@@ -650,6 +761,7 @@ main article .shop_now{
 
 .catalog_foto article:hover h5:after{
     opacity: 1;
+    transition: 0.4s;
 }
 
 .catalog_foto article:hover{
@@ -700,7 +812,22 @@ main article .shop_now{
 
 .pages_sckroll a:last-of-type{
     padding: 9px 8px;
+    /*position: relative;*/
+    /*animation: slideright 1s infinite;*/
 }
+
+/*@keyframes slideright {*/
+
+/*    0%{*/
+/*        left: 0;*/
+/*    }*/
+/*    100%{*/
+/*        left: 50px;*/
+/*        box-shadow: #46A358 2px 7px 3px 2px ;*/
+/*    }*/
+
+/*    */
+/*}*/
 
 .pages_sckroll a:hover{
     background-color: #46A358;
