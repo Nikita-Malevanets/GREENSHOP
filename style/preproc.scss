@@ -1,0 +1,466 @@
+$main_color: #46a358;
+
+
+
+
+@font-face {
+  font-family: 'cera_proregular';
+  src: url('../style/Fonts/cerapro-regular-webfont.eot');
+  src: url('../style/Fonts/cerapro-regular-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../style/Fonts/cerapro-regular-webfont.woff2') format('woff2'),
+  url('../style/Fonts/cerapro-regular-webfont.woff') format('woff'),
+  url('../style/Fonts/cerapro-regular-webfont.svg#cera_proregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'cera_problack';
+  src: url('../style/Fonts/cerapro-black-webfont.eot');
+  src: url('../style/Fonts/cerapro-black-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../style/Fonts/cerapro-black-webfont.woff2') format('woff2'),
+  url('../style/Fonts/cerapro-black-webfont.woff') format('woff'),
+  url('../style/Fonts/cerapro-black-webfont.ttf') format('truetype'),
+  url('../style/Fonts/cerapro-black-webfont.svg#cera_problack') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'cera_probold';
+  src: url('../style/Fonts/cerapro-bold-webfont.eot');
+  src: url('../style/Fonts/cerapro-bold-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../style/Fonts/cerapro-bold-webfont.woff2') format('woff2'),
+  url('../style/Fonts/cerapro-bold-webfont.woff') format('woff'),
+  url('../style/Fonts/cerapro-bold-webfont.ttf') format('truetype'),
+  url('../style/Fonts/cerapro-bold-webfont.svg#cera_probold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'cera_prolight';
+  src: url('../style/Fonts/cerapro-light-webfont.eot');
+  src: url('../style/Fonts/cerapro-light-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../style/Fonts/cerapro-light-webfont.woff2') format('woff2'),
+  url('../style/Fonts/cerapro-light-webfont.woff') format('woff'),
+  url('../style/Fonts/cerapro-light-webfont.ttf') format('truetype'),
+  url('../style/Fonts/cerapro-light-webfont.svg#cera_prolight') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'cera_promedium';
+  src: url('../style/Fonts/cerapro-medium-webfont.eot');
+  src: url('../style/Fonts/cerapro-medium-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../style/Fonts/cerapro-medium-webfont.woff2') format('woff2'),
+  url('../style/Fonts/cerapro-medium-webfont.woff') format('woff'),
+  url('../style/Fonts/cerapro-medium-webfont.ttf') format('truetype'),
+  url('../style/Fonts/cerapro-medium-webfont.svg#cera_promedium') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'hanging_lettersregular';
+  src: url('../style/Fonts/hanging/hanged_letters-webfont.eot');
+  src: url('../style/Fonts/hanging/hanged_letters-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../style/Fonts/hanging/hanged_letters-webfont.woff2') format('woff2'),
+  url('../style/Fonts/hanging/hanged_letters-webfont.woff') format('woff'),
+  url('../style/Fonts/hanging/hanged_letters-webfont.ttf') format('truetype'),
+  url('../style/Fonts/hanging/hanged_letters-webfont.svg#hanging_lettersregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+.background{
+  max-width: 500px;
+  margin: auto;
+  padding: 52px 100px 50px;
+  box-sizing: border-box;
+  border-bottom:solid 10px #46A358;
+;
+}
+
+.title{
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.title_login{
+  border-right:solid 2px #3d3d3d;;
+  padding-right: 12px;
+  margin-right: 10px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 80%;
+  color: #3d3d3d;
+  font-family: "Open Sans", sans-serif;
+}
+
+.title_register{
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 80%;
+  color: #46a358;
+  font-family: "Open Sans", sans-serif;
+}
+
+.text{
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 123%;
+  color: #3d3d3d;
+  margin-bottom: 18px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.User_name{
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 114%;
+  color: #a5a5a5;
+  padding: 12px 14px;
+  border: 1px solid #eaeaea;
+  border-radius: 5px;
+  box-sizing: border-box;
+  width: 100%;
+  height: 40px;
+  margin-bottom: 16px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.email{
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 114%;
+  color: #a5a5a5;
+  padding: 12px 14px;
+  border: 1px solid #eaeaea;
+  border-radius: 5px;
+  box-sizing: border-box;
+  width: 100%;
+  height: 40px;
+  margin-bottom: 16px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.Password{
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 114%;
+  color: #a5a5a5;
+  padding: 12px 14px;
+  border: 1px solid #eaeaea;
+  border-radius: 5px;
+  box-sizing: border-box;
+  width: 100%;
+  height: 40px;
+  margin-bottom: 16px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.Confirm-Password{
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 114%;
+  color: #a5a5a5;
+  padding: 12px 14px;
+  border: 1px solid #eaeaea;
+  border-radius: 5px;
+  box-sizing: border-box;
+  width: 100%;
+  height: 40px;
+  margin-bottom: 41px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.button_register{
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 100%;
+  color: #fff;
+  background: #46a358;
+  padding: 14px 118px;
+  border-radius: 5px;
+  border: #46a358;
+  margin-bottom: 36px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.text_register_with{
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 123%;
+  color: #3d3d3d;
+  margin-bottom: 27px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.link_google{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 9px;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 123%;
+  color: #727272;
+  padding: 10px;
+  width: 100%;
+  height: 40px;
+  border: 1px solid #eaeaea;
+  border-radius: 5px;
+  box-sizing: border-box;
+  text-decoration-line: none;
+  margin-bottom: 15px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.link_facebook{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 9px;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 123%;
+  text-align: center;
+  color: #727272;
+  padding: 10px;
+  width: 100%;
+  height: 40px;
+  border: 1px solid #eaeaea;
+  border-radius: 5px;
+  box-sizing: border-box;
+  text-decoration-line: none;
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 40px;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+body{
+
+  background-color: #fff;
+
+}
+
+
+.container{
+  margin: auto;
+  max-width: 1200px;
+}
+
+header{
+  padding-top: 30px;
+  margin-bottom: 12px;
+  /*display: flex;*/
+  /*align-items: center;*/
+  /*justify-content: center;*/
+}
+
+
+
+
+header nav ul{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+
+}
+
+.logo{
+  /*margin-right: 229px;*/
+  margin-bottom: 18px;
+}
+
+header nav  li a{
+  text-decoration: none;
+  /*display: inline-block;*/
+  color: #3d3d3d;
+}
+
+/*header nav li:first-of-type{*/
+/*    font-weight: 700;*/
+/*    font-size: 16px;*/
+/*    color: #3d3d3d;*/
+/*    font-family: 'cera_probold';*/
+/*}*/
+
+header nav li{
+  font-weight: 400;
+  font-size: 16px;
+  color: #3d3d3d;
+  font-family: 'cera_proregular';
+}
+
+header nav li:last-of-type{
+  margin-right: 0;
+}
+
+header .container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(70, 163, 88, 0.5);
+}
+
+header nav li:after{
+  height: 3px;
+  background-color: transparent;
+  width: 100%;
+  content:"" ;
+  display: block;
+  margin-top:22px;
+}
+
+header nav li:hover:after{
+  background-color: #46A358;
+}
+
+header nav li:hover{
+  font-weight: 700;
+  font-size: 16px;
+  color: #3d3d3d;
+  font-family: 'cera_probold';
+}
+
+header nav li ul li:after{
+  display: none;
+}
+
+
+header nav .plant_care{
+  position: relative;
+}
+
+header nav .drop_down{
+  position: absolute;
+  display: none;
+  top: 65px;
+  left: -55px;
+  background-color: #edf6ee;
+  /*padding: 7px 88px 7px 14px;*/
+  opacity: 0;
+}
+
+header nav .plant_care:hover .drop_down{
+  opacity: 1;
+  display: block;
+}
+
+header nav .drop_down li {
+  padding: 7px 88px 8px 14px;
+  position: relative;
+}
+
+/*header nav .drop_down li:last-of-type:after{*/
+/*    content: "";*/
+/*    display: inline-block;*/
+/*    background-image: url("../images/Stroke 3.svg");*/
+/*    height: 10px;*/
+/*    width: 6px;*/
+/*    position: absolute;*/
+/*    right: 17px;*/
+/*    bottom: 12px;*/
+/*}*/
+
+header nav .drop_down li:hover path{
+  fill: #fff;
+}
+
+header nav .drop_down li svg{
+  position: absolute;
+  right: 17px;
+  bottom: 12px;
+}
+
+header nav .drop_down li:hover svg{
+  transform: rotate(180deg);
+}
+
+header nav .drop_down li a{
+  font-weight: 400;
+  font-size: 16px;
+  color: #3d3d3d;
+}
+
+header nav .drop_down li:hover{
+  background-color: #1a712a;
+}
+
+header nav .drop_down li:hover a{
+  font-weight: 700;
+  font-size: 16px;
+  color: #fff;
+}
+
+header nav .drop_down .drop_down_2{
+  position: absolute;
+  display: block;
+  top: -105px;
+  left: 183px;
+  background-color: #edf6ee;
+  opacity: 0;
+}
+
+.drop_down .priming:hover .drop_down_2{
+  opacity: 1;
+}
+
+header .drop_down .drop_down_2 li{
+  padding: 7px 14px 8px 14px;
+  white-space: nowrap;
+}
+
+
+.drop_down li:hover .drop_down_2 li a{
+  font-weight: 400;
+  font-size: 16px;
+  color: #3d3d3d;
+}
+
+.drop_down li:hover .drop_down_2 li:hover a{
+  font-weight: 700;
+  font-size: 16px;
+  color: #fff;
+}
+
+
+.link_login{
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  color: #fff;
+  border: solid;
+  background-color: #46A358;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  box-sizing: border-box;
+  padding: 8px 17px 7px 17px ;
+  margin-bottom: 18px;
+  font-family: 'cera_promedium';
+}
+
+.link_login:before{
+  content: "";
+  display: inline-block;
+  background-image: url("../images/Logout.svg");
+  width: 20px;
+  height: 20px;
+}
