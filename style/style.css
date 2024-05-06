@@ -998,7 +998,6 @@ footer{
     gap: 145px;
     background: linear-gradient(90deg, #edf6ef 0%, #52c368 100%);
     max-width: 1200px;
-    padding: 25px 22px 19px 23px;
 }
 
 .footer_block_2 a{
@@ -1010,6 +1009,7 @@ footer{
     color: #3d3d3d;
     font-family: cera_proregular;
     position: relative;
+    text-decoration: none;
 }
 
 .footer_block_2 a:nth-child(2):before{
