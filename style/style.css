@@ -982,10 +982,16 @@ main article .shop_now{
 }
 
 .blog_posts .flex_blog_articles{
-    display: flex;
+    /*display: flex;*/
     justify-content: space-between;
     gap: 43px;
     flex-wrap: nowrap;
+    position: relative;
+}
+
+
+.owl-item.cloned:last-of-type {
+    display: none;
 }
 
 .blog_posts .flex_blog_articles article{
@@ -1067,6 +1073,14 @@ main article .shop_now{
     margin: 3px;
     display: inline-block;
     border-radius: 6px;
+}
+
+.owl-dots{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 55px;
+    left: 600px;
 }
 
 
@@ -1344,3 +1358,85 @@ footer{
     top: 33px;
     left: 0;
 }
+
+
+
+
+
+.jq .ui-accordion .ui-accordion-header{
+    background-color:transparent ;
+    border: solid 2px  #46A358;
+    border-radius: 22px;
+    padding: 20px 16px;
+    &.ui-state-active{
+        background-color: antiquewhite;
+        border-bottom: none;
+        border-radius: 22px 22px 0 0 ;
+    }
+}
+
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover{
+    border: solid 2px #46a358;
+    color: black;
+}
+
+.jq .ui-accordion .ui-accordion-content{
+    border: solid 2px #46a358;
+    overflow: visible;
+    background-color: antiquewhite;
+    border-radius: 0 0 22px 22px;
+    border-top: none;
+}
+
+.ui-state-active .ui-icon{
+    transform: rotate(180deg);
+}
+
+.ui-icon{
+    position: absolute;
+    right: 20px;
+    background-image: none;
+    background-position: 0;
+    text-indent: 0;
+}
+
+.ui-icon:after{
+    background-image: url("../images/chevron-down.svg");
+    content: "";
+    display: block;
+    width: 35px;
+    height: 32px;
+    position: absolute;
+    right: -11px;
+    top: -6px;
+
+}
+
+.ui-icon-triangle-1-e {
+    background-image: none;
+    background-position: 0;
+    text-indent: 0;
+}
+
+.ui-state-active .ui-icon{
+    background-image: none;
+    background-position: 0;
+    text-indent: 0;
+}
+
+.ui-state-hover .ui-icon{
+    background-image: none;
+    background-position: 0;
+    text-indent: 0;
+}
+
+/*.ui-state-active .ui-icon, .ui-button:active .ui-icon:after{*/
+/*    background-image: url("../images/chevron-down.svg");*/
+/*    content: "";*/
+/*    width: 16px;*/
+/*    height: 16px;*/
+/*    display: block;*/
+/*    position: absolute;*/
+/*    top: 84px;*/
+/*    right: 22px;*/
+/*}*/
