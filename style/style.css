@@ -543,7 +543,7 @@ main article .shop_now{
     line-height: 125%;
     text-transform: uppercase;
     color: #fff;
-    border: solid;
+    border: solid #46A358;
     background-color: #46A358;
     text-decoration: none;
     /*display: flex;*/
@@ -553,8 +553,16 @@ main article .shop_now{
     margin-bottom: 85px;
     padding: 10px 27px ;
     font-family: 'cera_probold';
+    animation: shop_now 3s infinite ;
 }
 
+@keyframes shop_now {
+    100%{
+        -webkit-box-shadow: 2px 1px 45px 13px #40FFB9;
+        box-shadow: 2px 1px 45px 13px #40FFB9;;
+    }
+    
+}
 
 .image_banner{
     margin-top: 12px;
@@ -622,6 +630,76 @@ main article .shop_now{
     flex-direction: column;
     background: linear-gradient(180deg, rgba(70, 163, 88, 0.1) 0%, rgba(70, 163, 88, 0.03) 100%);
     margin-top: -35px;
+}
+.sale h2{
+    -webkit-animation-duration: 4s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    animation-name: super_sale;
+    -webkit-animation-name: super_sale;
+    animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes super_sale {
+    0% {
+        -webkit-transform: none;
+        transform: none;
+    }
+    15% {
+        -webkit-transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
+        transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
+    }
+    30% {
+        -webkit-transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);
+        transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);
+    }
+    45% {
+        -webkit-transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);
+        transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);
+    }
+    60% {
+        -webkit-transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);
+        transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);
+    }
+    75% {
+        -webkit-transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
+        transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
+    }
+    100% {
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+@keyframes super_sale {
+    0% {
+        -webkit-transform: none;
+        transform: none;
+    }
+    15% {
+        -webkit-transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
+        transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
+    }
+    30% {
+        -webkit-transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);
+        transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);
+    }
+    45% {
+        -webkit-transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);
+        transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);
+    }
+    60% {
+        -webkit-transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);
+        transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);
+    }
+    75% {
+        -webkit-transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
+        transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
+    }
+    100% {
+        -webkit-transform: none;
+        transform: none;
+    }
 }
 
 .catalog_list h2{
@@ -716,7 +794,7 @@ main article .shop_now{
 .discount {
     position: absolute;
     left: 0;
-    top: 14px;
+    top: 0;
     padding: 8px;
     background-color: #46A358;
     font-weight: 500;
@@ -724,6 +802,23 @@ main article .shop_now{
     line-height: 100%;
     color: #fff ;
     font-family: cera_promedium;
+    animation:sale_move 3s infinite ;
+}
+
+@keyframes sale_move {
+    0%{
+        left: 0;
+        top: 0;
+    }
+    50%{
+        left: 69%;
+        top: 0;
+    }
+    100%{
+        left: 0;
+        top: 0;
+    }
+
 }
 
 .catalog_foto p span{
@@ -747,6 +842,8 @@ main article .shop_now{
     top: 12px;
     left: 0;
 }
+
+
 
 .catalog_foto p{
     font-weight: 700;
@@ -830,22 +927,22 @@ main article .shop_now{
 
 .pages_sckroll a:last-of-type{
     padding: 9px 8px;
-    /*position: relative;*/
-    /*animation: slideright 1s infinite;*/
+    position: relative;
+    animation: slideright 4s infinite;
 }
 
-/*@keyframes slideright {*/
+@keyframes slideright {
 
-/*    0%{*/
-/*        left: 0;*/
-/*    }*/
-/*    100%{*/
-/*        left: 50px;*/
-/*        box-shadow: #46A358 2px 7px 3px 2px ;*/
-/*    }*/
+    0%{
+        left: 0;
+    }
+    100%{
+        left: 50px;
+        box-shadow: #46A358 0 7px 29px 0px ;
+    }
 
-/*    */
-/*}*/
+
+}
 
 .pages_sckroll a:hover{
     background-color: #46A358;
@@ -1064,6 +1161,7 @@ main article .shop_now{
     width: 16px;
     height: 16px;
 }
+
 
 
 .owl-dots .owl-dot span{
@@ -1440,3 +1538,83 @@ footer{
 /*    top: 84px;*/
 /*    right: 22px;*/
 /*}*/
+
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    visibility: visible;
+    opacity: 1;
+    &.done{
+        opacity: 0;
+        visibility: hidden;
+    }
+
+}
+.loader {
+    display: block;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    width: 150px;
+    height: 150px;
+    margin: -75px 0 0 -75px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #9370DB;
+    -webkit-animation: spin 2s linear 2s infinite;
+    animation: spin 2s linear 2s infinite;
+
+}
+.loader:before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #BA55D3;
+    -webkit-animation: spin 3s linear infinite;
+    animation: spin 3s linear infinite;
+}
+.loader:after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #FF00FF;
+    -webkit-animation: spin 1.5s linear infinite;
+    animation: spin 1.5s linear infinite;
+}
+@-webkit-keyframes spin {
+    0%   {
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+@keyframes spin {
+    0%   {
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
