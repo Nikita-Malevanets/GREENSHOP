@@ -566,6 +566,8 @@ main article .shop_now{
 
 .image_banner{
     margin-top: 12px;
+    width: 100%;
+    height: auto;
 }
 
 .catalog .container{
@@ -639,6 +641,10 @@ main article .shop_now{
     animation-name: super_sale;
     -webkit-animation-name: super_sale;
     animation-iteration-count: infinite;
+}
+.sale img{
+    width: 100%;
+    height: auto;
 }
 
 @-webkit-keyframes super_sale {
@@ -959,6 +965,7 @@ main article .shop_now{
     gap: 28px;
     position: relative;
     margin-bottom: 135px;
+    /*0*/
 }
 
 .find_more h4{
@@ -1094,11 +1101,20 @@ main article .shop_now{
 .blog_posts .flex_blog_articles article{
     background-color: #fbfbfb;
     text-align: left;
-    margin-bottom: 100px;
+    margin-bottom: 20px;
 }
 
-.blog_posts .flex_blog_articles div{
+.blog_posts .flex_blog_articles .flex_blog_div{
     padding: 9px 13px 12px 13px;
+}
+
+.blog_posts .flex_blog_articles .flex_blog_img{
+    width: 268px;
+    height: 195px;
+}
+
+.blog_posts .flex_blog_articles .flex_blog_img img{
+    width: 100%;
 }
 
 .blog_posts .flex_blog_articles div>p:nth-child(2){
@@ -1176,10 +1192,13 @@ main article .shop_now{
 .owl-dots{
     display: flex;
     justify-content: center;
-    position: absolute;
-    bottom: 55px;
-    left: 600px;
+    /*position: absolute;*/
+    /*bottom: 55px;*/
+    /*left: 600px;*/
+    margin-bottom: 80px;
 }
+
+
 
 
 footer{
@@ -1281,52 +1300,6 @@ footer{
     color: #727272
 }
 
-
-/*.footer_block_1 .Garden_Care h4:before{*/
-/*    content: "";*/
-/*    background-image: url("../images/Picture.png");*/
-/*    width: 77px;*/
-/*    height: 96px;*/
-/*    display:block;*/
-/*    position: absolute;*/
-/*    top: -81px;*/
-/*    left: 24px;*/
-/*}*/
-
-/*.footer_block_1 .Garden_Care h4:after{*/
-/*    content: "";*/
-/*    display: inline-block;*/
-/*    height: 1px;*/
-/*    max-width: 187px;*/
-/*    color: #1a712a;*/
-/*    transform: rotate(90deg);*/
-/*    position: absolute;*/
-/*    top: 0 ;*/
-/*    left: 0;*/
-/*}*/
-
-
-
-/*.footer_block_1 .Plant_Renovation h4:before{*/
-/*    content: "";*/
-/*    background-image: url("../images/Picture (1).png");*/
-/*    width: 83px;*/
-/*    height: 93px;*/
-/*    position: absolute;*/
-/*    display: block;*/
-/*    top: -81px;*/
-/*}*/
-
-/*.footer_block_1 .Watering_Graden h4:before{*/
-/*    content: "";*/
-/*    background-image: url("../images/Picture (2).png");*/
-/*    width: 90px;*/
-/*    height: 93px;*/
-/*    position: absolute;*/
-/*    display: inline-block;*/
-/*    top: -81px;*/
-/*}*/
-
 .footer_block_2{
     display: flex;
     align-items: center;
@@ -1393,19 +1366,24 @@ footer{
     margin-bottom: 7px;
 }
 
+.footer_div1{
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+}
+
 .footer_block_3 ul{
     list-style: none;
 }
-.footer_block_3 ul:first-of-type{
+.footer_div1>ul:first-of-type{
     margin-right: 164px ;
-
-
 }
-.footer_block_3 ul:nth-child(2){
+
+.footer_div1 ul:nth-child(2){
     margin-right: 129px;
 }
 
-.footer_block_3 ul:nth-child(3){
+.footer_div1 ul:nth-child(3){
     margin-right: 173px;
 }
 
@@ -1456,6 +1434,53 @@ footer{
     top: 33px;
     left: 0;
 }
+
+/*.footer_block_1 .Garden_Care h4:before{*/
+/*    content: "";*/
+/*    background-image: url("../images/Picture.png");*/
+/*    width: 77px;*/
+/*    height: 96px;*/
+/*    display:block;*/
+/*    position: absolute;*/
+/*    top: -81px;*/
+/*    left: 24px;*/
+/*}*/
+
+/*.footer_block_1 .Garden_Care h4:after{*/
+/*    content: "";*/
+/*    display: inline-block;*/
+/*    height: 1px;*/
+/*    max-width: 187px;*/
+/*    color: #1a712a;*/
+/*    transform: rotate(90deg);*/
+/*    position: absolute;*/
+/*    top: 0 ;*/
+/*    left: 0;*/
+/*}*/
+
+
+
+/*.footer_block_1 .Plant_Renovation h4:before{*/
+/*    content: "";*/
+/*    background-image: url("../images/Picture (1).png");*/
+/*    width: 83px;*/
+/*    height: 93px;*/
+/*    position: absolute;*/
+/*    display: block;*/
+/*    top: -81px;*/
+/*}*/
+
+/*.footer_block_1 .Watering_Graden h4:before{*/
+/*    content: "";*/
+/*    background-image: url("../images/Picture (2).png");*/
+/*    width: 90px;*/
+/*    height: 93px;*/
+/*    position: absolute;*/
+/*    display: inline-block;*/
+/*    top: -81px;*/
+/*}*/
+
+
 
 
 
