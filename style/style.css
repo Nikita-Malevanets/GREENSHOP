@@ -241,15 +241,9 @@
     margin: 0;
     box-sizing: border-box;
 }
-
-
 body{
-
     background-color: #fff;
-
 }
-
-
 .container{
     margin: auto;
     max-width: 1200px;
@@ -258,51 +252,58 @@ body{
 header{
     padding-top: 30px;
     margin-bottom: 12px;
-    /*display: flex;*/
-    /*align-items: center;*/
-    /*justify-content: center;*/
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid rgba(70, 163, 88, 0.5);
+        .logo{
+            margin-bottom: 18px;
+        }
+        nav ul{
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 50px;
+            li{
+                font-weight: 400;
+                font-size: 16px;
+                color: #3d3d3d;
+                font-family: 'cera_proregular';
+                a{
+                    text-decoration: none;
+                    color: #3d3d3d;
+                }
+            }
+            li:last-of-type{
+                margin-right: 0;
+        }
+    }
 }
 
 
 
-
-header nav ul{
-    list-style: none;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 50px;
-
-}
-
-.logo{
-    /*margin-right: 229px;*/
-    margin-bottom: 18px;
-}
-
-header nav  li a{
-    text-decoration: none;
-    /*display: inline-block;*/
-    color: #3d3d3d;
-}
-
-/*header nav li:first-of-type{*/
-/*    font-weight: 700;*/
-/*    font-size: 16px;*/
-/*    color: #3d3d3d;*/
-/*    font-family: 'cera_probold';*/
+/*.logo{*/
+/*    margin-bottom: 18px;*/
 /*}*/
 
-header nav li{
-    font-weight: 400;
-    font-size: 16px;
-    color: #3d3d3d;
-    font-family: 'cera_proregular';
-}
+/*header nav  li a{*/
+/*    text-decoration: none;*/
+/*    color: #3d3d3d;*/
+/*}*/
 
-header nav li:last-of-type{
-    margin-right: 0;
-}
+
+/*header nav li{*/
+/*    font-weight: 400;*/
+/*    font-size: 16px;*/
+/*    color: #3d3d3d;*/
+/*    font-family: 'cera_proregular';*/
+/*}*/
+
+/*header nav li:last-of-type{*/
+/*    margin-right: 0;*/
+/*}*/
 
 header .container{
     display: flex;
