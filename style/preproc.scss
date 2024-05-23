@@ -313,7 +313,7 @@ header{
           color: #3d3d3d;
         }
       }
-      li:last-of-type{
+      &:last-of-type{
         margin-right: 0;
       }
       &:after{
@@ -380,6 +380,16 @@ header{
                 white-space: nowrap;
               }
             }
+            &:hover .drop_down_2 li a{
+              font-weight: 400;
+              font-size: 16px;
+              color: #3d3d3d;
+            }
+            &:hover .drop_down_2 li:hover a{
+              font-weight: 700;
+              font-size: 16px;
+              color: #fff;
+            }
           }
           .opacity{
             background-color: transparent;
@@ -389,18 +399,18 @@ header{
       }
     }
   }
-
-.drop_down li:hover .drop_down_2 li a{
-  font-weight: 400;
-  font-size: 16px;
-  color: #3d3d3d;
 }
-
-.drop_down li:hover .drop_down_2 li:hover a{
-  font-weight: 700;
-  font-size: 16px;
-  color: #fff;
-}
+//.drop_down li:hover .drop_down_2 li a{
+//  font-weight: 400;
+//  font-size: 16px;
+//  color: #3d3d3d;
+//}
+//
+//.drop_down li:hover .drop_down_2 li:hover a{
+//  font-weight: 700;
+//  font-size: 16px;
+//  color: #fff;
+//}
 
 
 .banner .container{
